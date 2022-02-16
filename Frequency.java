@@ -26,16 +26,16 @@ class Frequency
             {
                 if(flag)
                 {
-                    first = mid - 1;
+                    first = mid;
                 }
                 else{
-                    last = mid + 1;
+                    last = mid;
                 }
             }
             else if(arr[mid] < target)
-                first = mid + 1;
+                first = mid;
             else
-                last = mid - 1;
+                last = mid;
         }
         if(flag)
         return first;
